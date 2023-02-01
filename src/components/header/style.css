@@ -1,0 +1,20 @@
+.menulist, .menulist::after, .menulist::before {
+    background-color: #000;
+    border-radius: 0;
+    height: 2px;
+    position: absolute;
+    transition-duration: .15s;
+    transition-property: none;
+    transition-timing-function: ease;
+    width: 20px;
+}
+.menulist::before{
+    top: -8px;
+}
+.menulist::after{
+    bottom: -8px;
+}
+.menulist::after .menulist::before{
+    content: "";
+    display: block;
+}
